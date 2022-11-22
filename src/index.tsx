@@ -1,14 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { CssBaseline } from "@mui/material";
+import App from "./App";
+
+import "@fontsource/open-sans/300.css";
+import "@fontsource/open-sans/400.css";
+import "@fontsource/open-sans/500.css";
+import "@fontsource/open-sans/700.css";
+
+import "./index.css";
+import "./assets/fonts/ITC Avant Garde Gothic Bold.otf";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <CssBaseline />
     <App />
   </React.StrictMode>
 );
