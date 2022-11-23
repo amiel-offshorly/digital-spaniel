@@ -84,7 +84,8 @@ const Hero = () => {
           left: "50%",
           top: 0,
           bottom: 0,
-          width: "100vh",
+          maxWidth: breakpoints.values.lg,
+          width: "49.5vw",
           overflow: "hidden",
           [breakpoints.down("md")]: {
             display: "none",
@@ -96,26 +97,11 @@ const Hero = () => {
           alt="Hero"
           style={{
             width: "100%",
+            height: "100%",
             objectFit: "cover",
           }}
         />
       </Box>
-      {/* <Box sx={{ flex: 1, position: "relative" }}>
-        <img
-          src={hero2x}
-          alt="Hero"
-          style={{
-            position: "absolute",
-            left: 0,
-            top: 0,
-            bottom: 0,
-            height: "100%",
-            width: "50vw",
-            maxWidth: breakpoints.values.xl,
-            objectFit: "cover",
-          }}
-        />
-      </Box> */}
     </Box>
   );
 };
